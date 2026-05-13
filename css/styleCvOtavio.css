@@ -1,0 +1,73 @@
+:root {
+    --cor-fundo: #F9F7F2;     
+    --cor-texto: #2C241E;     
+    --cor-titulo: #734916;    
+    --cor-accent: #A6855D;    
+    --cor-detalhe: #E8E2D6;   
+    --visitado: #a7620e;
+}
+
+* {
+
+    color: var(--cor-texto);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: large;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(var(--cor-fundo) 50%, var(--cor-detalhe));
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--cor-titulo); 
+    margin: 20px 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 b, h2 {
+    font-weight: bold;
+    font-family: "archivo black", sans-serif;
+    text-decoration: underline;
+    color: var(--cor-titulo);
+}
+
+h1#nome-titulo {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 2.5em;
+    color: var(--cor-titulo);
+}
+
+img[alt="Foto de Otávio Felício"] {
+    border-radius: 100%;
+    border: 3px solid var(--cor-accent);
+}
+
+a:hover {
+    transition: 0.3s;
+    background-color: var(--cor-detalhe);
+    padding: 5px;
+    border-radius: 20px;
+    color: var(--cor-titulo);
+}
+
+a:visited {
+    color: var(--visitado);
+}
+
+.italico {
+    font-size: 1em;
+    font-style: italic;
+    margin-top: 5px;
+    color: var(--cor-accent);
+}
